@@ -19,4 +19,10 @@ pipeline {
     }
     }
     
+    stage('Git Tag') {
+        steps {
+            gitTag()
+        }
+    }
+    
 }
