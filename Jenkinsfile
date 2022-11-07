@@ -1,9 +1,8 @@
 @Library('Test-Shared-Library') _
 
-def readcounter = readFile(file: 'version.txt')
-readcounter=readcounter.toInteger() +1
-def version= "Version" + readcounter
-println(version)
+def counter = 0
+def data = "Version" + counter
+writeFile(file: 'version.txt', text: counter.toString())
 
 pipeline {
     agent any
@@ -24,8 +23,8 @@ pipeline {
     }
     }
     
-    stage('Git Tag') {
-        steps {
+        stage('Git Tag') {
+            steps {
             gitTag()
         }
     }
