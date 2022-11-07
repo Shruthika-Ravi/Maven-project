@@ -17,8 +17,11 @@
   </dependencies>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <artifactversion>Version0</artifactversion>
   </properties>
   <build>
+    <artifactName>myProjectName-${artifactversion}</artifactName>
+    <!--<artifactName>myProjectName</artifactName> -->
     <pluginManagement>
       <plugins>
         <plugin>
