@@ -1,5 +1,10 @@
 @Library('Test-Shared-Library') _
 
+def readcounter = readFile(file: 'version.txt')
+readcounter=readcounter.toInteger() +1
+def version= "Version" + readcounter
+println(version)
+
 pipeline {
     agent any
     
