@@ -20,8 +20,8 @@
     <artifactversion>Version0</artifactversion>
   </properties>
   <build>
-    <finalName>myProjectName-${artifactversion}</finalName>
-    <!--<finalName>myProjectName</finalName> -->
+    <artifactName>myProjectName-${artifactversion}</artifactName>
+    <!--<artifactName>myProjectName</artifactName> -->
     <pluginManagement>
       <plugins>
         <plugin>
