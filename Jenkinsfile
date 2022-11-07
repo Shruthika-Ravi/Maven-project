@@ -1,8 +1,5 @@
 @Library('Test-Shared-Library') _
 
-def counter = 0
-def data = "Version" + counter
-writeFile(file: 'version.txt', text: counter.toString())
 
 pipeline {
     agent any
