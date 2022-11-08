@@ -1,5 +1,5 @@
 @Library('Test-Shared-Library') _
-
+def gv
 
 pipeline {
     agent any
@@ -21,7 +21,7 @@ pipeline {
         
         stage('Git Tag') {
             steps {
-            gitTag()
+            gv.gitTag()
         }
     }
     }
