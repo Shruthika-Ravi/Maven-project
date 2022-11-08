@@ -21,7 +21,8 @@ pipeline {
         
         stage('Git Tag') {
             steps {
-            gv.gitTag()
+                script {
+                    gv.gitTag() }
         }
     }
     }
