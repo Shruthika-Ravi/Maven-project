@@ -1,4 +1,5 @@
 @Library('Test-Shared-Library') _
+
 def gv
 
 pipeline {
@@ -10,6 +11,7 @@ pipeline {
     }
     
     stages {
+        
         stage('Git Checkout') {
             steps {
             gitCheckout(
@@ -22,11 +24,10 @@ pipeline {
         stage('Git Tag') {
             steps {
                 script {
-                    gv.gitTag() }
+                    gv.gitTag() 
+                }
         }
     }
-    }
-    
         
-    
+    } 
 }
