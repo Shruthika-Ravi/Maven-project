@@ -1,6 +1,6 @@
 @Library('Test-Shared-Library') _
 
-def gv
+globalvar
 
 pipeline {
     agent any
@@ -24,7 +24,7 @@ pipeline {
         stage('Git Tag') {
             steps {
                 script {
-                    gv.gitTag() 
+                    globalvar.gitTag() 
                 }
         }
     }
