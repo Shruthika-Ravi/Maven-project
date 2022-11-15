@@ -21,7 +21,7 @@ pipeline {
             }
     }
         
-        stage (Build and Package') {
+        stage ('Build and Package') {
   steps {
     script {
       //begin common code 
