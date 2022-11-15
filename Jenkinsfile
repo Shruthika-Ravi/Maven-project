@@ -1,6 +1,6 @@
 @Library('Test-Shared-Library') _
 
-globalvar
+def globalvar
 
 pipeline {
     agent any
